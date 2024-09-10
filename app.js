@@ -1,13 +1,14 @@
 alert('Boas vindas ao jogo do número secreto'); // alert mostra uma mensagem na tela em uma caixa de diálogo
 
-let numeroSecreto = parseInt(Math.random() * 100 + 1); // let é um tipo de variavel (variaveis guarda espaços na memoria)
+let numeroMaximo = 5000;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1); // let é um tipo de variavel (variaveis guarda espaços na memoria)
 console.log(numeroSecreto);
 let chute; 
 let tentativas = 1;
 
 //enquanto chute não for igual ao numero secreto ...
 while (chute != numeroSecreto) { // o sinal de != significa diferente
-   chute = prompt('Escolha um número entre 1 e 100'); // o prompt é utilizada para "pegar" alguma informação que o usuario digita em uma caixa de diálogo
+   chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`); // o prompt é utilizada para "pegar" alguma informação que o usuario digita em uma caixa de diálogo
    // if é uma condicional, se (if) determinada coisa acontecer se nao (else)...
    // se o chute for igual ao numero secreto 
    if (chute == numeroSecreto) {
