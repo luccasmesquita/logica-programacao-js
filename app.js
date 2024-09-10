@@ -11,7 +11,7 @@ while (chute != numeroSecreto) { // o sinal de != significa diferente
    // if é uma condicional, se (if) determinada coisa acontecer se nao (else)...
    // se o chute for igual ao numero secreto 
    if (chute == numeroSecreto) {
-       alert(`Isso ai! Você descobriu o número secreto (${numeroSecreto}) com ${tentativas} tentativas`); // `` template strings é utilizado para concatenação de dados
+        break;
     } else {
         if (chute > numeroSecreto) {
             alert(`o numero secreto é menor que ${chute}`);
@@ -21,3 +21,6 @@ while (chute != numeroSecreto) { // o sinal de != significa diferente
         tentativas ++
     }  
 }
+
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'; //operador ternario  
+alert(`Isso ai! Você descobriu o número secreto (${numeroSecreto}) com ${tentativas} ${palavraTentativa}`); // `` template strings é utilizado para concatenação de dados
