@@ -1,5 +1,23 @@
+/* 
+
+Baixar uma cópia de um repositório hospedado no GitHub para o seu computador, utilizando o comando git clone;
+
+Realizar alterações no código de um projeto e registrá-las com commits, utilizando os comandos git add e git commit;
+
+Visualizar quais arquivos foram modificados no repositório local, utilizando o comando git status;
+
+Listar os commits realizados no repositório, com dados do autor, data e mensagem de cada commit, utilizando o comando git log;
+
+Visualizar os repositórios remotos linkados com o repositório local, utilizando o comando git remote;
+
+Enviar commits feitos no repositório local para o repositório remoto, utilizando o comando git push;
+
+Baixar commits do repositório remoto para o repositório local, utilizando o comando git pull;
+
+*/
+
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 50;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
